@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.emptySquare {
+  width: 4px;
+  height: 4px;
+  border: solid black 1px;
+  margin: 1px;
+}
+
+.filledSquare {
+  width: 4px;
+  height: 4px;
+  border: solid black 2px;
+  margin: 1px;
+}
+
+.square {
+  width: 4px;
+  height: 4px;
+  border: solid black 1px;
+  margin: 1px;
+}
+
+.grid {
+  justify-items: center;
+  width: 320px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(52, 1fr);
+}
