@@ -1,7 +1,7 @@
-import './App.css';
 import Header from './components/Header';
 import Grid from './components/Grid';
 import React from 'react';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -38,11 +38,11 @@ class App extends React.Component {
     console.log(this.state.weekDifference)
     return (
       <div className="App">
-        <div>
+        <div className='header'>
           <Header />
         </div>
 
-        <div>
+        <div className='form'>
           <form onSubmit={this.handleBirthdateSubmit}>
             <label>Birth date: </label>
             <input type='String' value={this.state.birthdate} onChange={this.handleInputChange}/>
